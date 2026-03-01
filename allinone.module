@@ -1,6 +1,6 @@
 
 #!name = All in One - Caryln
-#!desc = YouTube + Spotify + SoundCloud + Locket (RevenueCat) + Sub-Store + Alight Motion + PicsArt + Wink + Truecaller + KineMaster + CamScanner + BeautyPlus
+#!desc = YouTube + Spotify + SoundCloud + Locket (RevenueCat) + Sub-Store + Alight Motion + PicsArt + Wink + Truecaller + KineMaster + CamScanner + BeautyPlus + Meitu
 #!author = Caryln
 
 #Shadowrocket Unlock nhiều app vip
@@ -71,6 +71,9 @@ BeautyPlus = type=http-response,pattern=https:\/\/(api\.mr\.pixocial\.com\/v1\/m
 #Locket
 revenuecat = type=http-response,pattern=^https:\/\/api\.revenuecat\.com\/.+\/(receipts$|subscribers\/[^/]+$),requires-body=true,max-size=-1,timeout=60,script-path=https://raw.githubusercontent.com/duyvinh09/Module_IOS/refs/heads/main/js/Locket_DuyVinh09.js
 deleteHeader = type=http-request,pattern=^https:\/\/api\.revenuecat\.com\/.+\/(receipts|subscribers),script-path=https://raw.githubusercontent.com/duyvinh09/Module_IOS/refs/heads/main/js/deleteHeader.js,timeout=60
+
+#Meitu
+BeautyPlus = type=http-response,pattern=https:\/\/(api\.mr\.pixocial\.com\/v1\/manual_unlock|newbeee-api\.beautyplus\.com\/api\/v1\/asset\/balance),requires-body=true,max-size=-1,timeout=60,script-path=https://raw.githubusercontent.com/duyvinh09/Module_IOS/refs/heads/main/js/MeiTuXiuXiu.js
 
 [Map Local]
 ^https?:\/\/[\w-]+\.googlevideo\.com\/initplayback.+&oad data-type=text data="" status-code=200
